@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* outer page layouts */
+
+.home-page, .payment-page, .success-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-page, .success-page{
+  height: 100vh;
+  justify-content: center;
+}
+
+.payment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 70px;
+  width: auto;
+  border-radius: 8px;
+  height: 40vh;
+  box-shadow: 2px 3px rgb(189, 189, 189);
+}
+
+.success{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  height: 40vh;
+}
+
+/* item list layout design */
+
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px 50px;
+}
+
+/* item card design layout */
+
+.item-card {
+  background: linear-gradient(180deg, #7eafff 0%, #FF758F 100%);
+  border-radius: 40px 0px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 20px;
+  max-width: 300px;
+  box-shadow: 6px 6px rgb(220, 220, 220);
+}
+
+.item-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100px;
+  text-align: left;
+}
+
+.item-description {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.item-image {
+  width: 30vh;
+  height: 30vh;
+  margin-bottom: 20px;
+  border-radius: 10%;
+}
+
+.item-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #FFD700;
+  color: black;
+  padding: 10px;
+  border-radius: 20px 0px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+.available_units{}
+
+.quantity-container {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-label {
+  font-size: 1rem;
+  margin-right: 10px;
+  color: white;
+}
+
+.quantity-dropdown {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+}
+
+.add-to-cart{
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #555;
+}
+
+/* cart design */
+
+.cart {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-table-container {
+  width: 70vw;
+  margin: 20px auto;
+  border-collapse: collapse;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.cart-table th, .cart-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+  background-color: #f4f4f4;
+}
+
+.cart-table td {
+  background-color: #fff;
+}
+
+.cart-table tfoot {
+  font-weight: bold;
+}
+
+.total-label {
+  text-align: right;
+}
+
+/* cart layout design */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+
+.close-button:hover{
+  background: transparent;
+  color: red;
+}
+
+/* default button design */
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 800px) {
+  .item-list  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .item-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .payment{
+    padding: 10px;
+    height: 40vh;
+  }
+}
