@@ -7,7 +7,8 @@ const useInventoryStore = create((set) => ({
   cart: [],
   fetchInventory: async () => {
     const response = await axios.get(
-      "https://wendor-backend.vercel.app/api/shopper/inventory"
+      "http://localhost:8000/api/shopper/inventory"
+      // "https://wendor-backend-sigma.vercel.app/api/shopper/inventory"
     );
     // console.log(response.data.items);
     set({ inventory: response.data.items });

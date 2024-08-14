@@ -2,15 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Required - Note
+
+Please start the backend server on `localhost:8000` before running the frontend of the application or using the deployed link.
+
+To run the backend, please visit the backend repository here:
+[https://github.com/mytestaccount-1/wendor_backend](https://github.com/mytestaccount-1/wendor_backend) and follow the instructions.
+
 ## Available Scripts
 
 To run this project, in the project directory, run these commands:
 
-### `npm install`
+Migrate to the folder/directory where you want to clone the project. Then run:
+
+#### `git clone https://github.com/mytestaccount-1/vendor_frontend.git`
+
+Clones the repository on your system
+
+#### `npm install`
 
 Installs all the dependencies required to run the project.
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -25,6 +38,8 @@ This app has been deployed to [https://vendor-frontend-nine.vercel.app/](https:/
 Vercel provides serverless hosting and helps implementing automatic CI/CD to the application.
 
 ## Screenshots and Workflow
+
+### Shopper UI
 
 #### Home Page
 
@@ -51,3 +66,46 @@ The user is directed to the payment page where he can pay for the items he has s
 #### Success Page
 After the payment is successful, the user is directed to the success page. The success page is redirected to the home page in 2 seconds.
 ![Success Page](/public/screenshots/payment_success.png)
+
+
+### Admin UI
+
+#### Login Page
+
+The admin can login to the application by entering the correct credentials.
+![Admin Login](/public/screenshots/admin_login.png)
+
+#### Admin Dashboard
+
+When the admin logs in, he is directed to the admin dashboard. The dashboard consists of the inventory which admin can view for his reference and also the bulk create and update items forms for admin operations.
+![Admin Dashboard](/public/screenshots/admin_dashboard.png)
+
+#### Admin Inventory
+
+The admin can view all the items that are currenlty present in the inventory on the admin dashboard along with all the details. Helpful for the admin, isn't it?
+![Admin Inventory](/public/screenshots/admin_inventory.png)
+
+#### Admin Operations
+
+The admin can add items in bulk using the Bulk Create Items form and update an existing item in the inventory by using Update Item form.
+
+- Update Items 
+
+Select the item to be updated from the dropdown
+
+![Update Items](/public/screenshots/update_items.png)
+
+Edit the details as required and click on the `Update Item` button
+
+![Update Items 2](/public/screenshots/update_items_2.png)
+
+The changes reflect immediately on the admin inventory and shopper ui as well.
+
+- Bulk Create Items
+
+Add the items you want to create with the fields as required.
+Click on `Add Another Item` button to add more items as needed. When done, click on `Create Items` button to create the items in bulk.
+
+![Create Bulk Items](/public/screenshots/bulk_create.png)
+
+The changes reflect immediately on the admin inventory and shopper ui as well.

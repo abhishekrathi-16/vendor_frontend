@@ -2,7 +2,8 @@ import axios from 'axios';
 
 // creates a custom config for axios to be used, enables modular and re-usable code
 const API = axios.create({
-  baseURL: 'https://wendor-backend.vercel.app/api',
+  baseURL: 'http://localhost:8000/api',
+  // baseURL: 'https://wendor-backend-sigma.vercel.app/api'
 });
 
 // to intercept any network errors that might pop up while requesting the API
