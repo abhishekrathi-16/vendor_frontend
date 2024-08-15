@@ -13,7 +13,7 @@ To run the backend, please visit the backend repository here:
 
 To run this project, in the project directory, run these commands:
 
-Migrate to the folder/directory where you want to clone the project. Then run:
+Migrate to the folder/directory where you want to clone the project. Then run the following command in the terminal:
 
 #### `git clone https://github.com/mytestaccount-1/vendor_frontend.git`
 
@@ -33,7 +33,7 @@ You may also see any lint errors in the console.
 
 ## Deployment
 
-This app has been deployed to [https://vendor-frontend-nine.vercel.app/](https://vendor-frontend-nine.vercel.app/) using Vercel. Visit the live hosted site to view the app in production.
+This app has been deployed to [https://vendor-frontend-nine.vercel.app/](https://vendor-frontend-nine.vercel.app/) using Vercel. Visit the live hosted site to view the app in production. Note: The deployed link doesn't work because of backend related CORS issues.
 
 Vercel provides serverless hosting and helps implementing automatic CI/CD to the application.
 
