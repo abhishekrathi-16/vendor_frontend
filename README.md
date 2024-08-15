@@ -70,6 +70,8 @@ After the payment is successful, the user is directed to the success page. The s
 
 ### Admin UI
 
+#### You can use the Admin UI by visiting the /admin route on browser. No buttons have been provided to access the admin routes.
+
 #### Login Page
 
 The admin can login to the application by entering the correct credentials.
