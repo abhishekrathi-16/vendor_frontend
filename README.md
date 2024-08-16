@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Please start the backend server on `localhost:8000` before running the frontend of the application or using the deployed link.
 
 To run the backend, please visit the backend repository here:
-[https://github.com/mytestaccount-1/wendor_backend](https://github.com/mytestaccount-1/wendor_backend) and follow the instructions.
+[https://github.com/abhishekrathi-16/wendor_backend](https://github.com/mytestaccount-1/wendor_backend) and follow the instructions.
 
 ## Available Scripts
 
@@ -15,7 +15,7 @@ To run this project, in the project directory, run these commands:
 
 Migrate to the folder/directory where you want to clone the project. Then run the following command in the terminal:
 
-#### `git clone https://github.com/mytestaccount-1/vendor_frontend.git`
+#### `git clone https://github.com/abhishekrathi-16/vendor_frontend.git`
 
 Clones the repository on your system
 
