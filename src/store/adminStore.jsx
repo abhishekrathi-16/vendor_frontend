@@ -23,12 +23,13 @@ const useAdminStore = create((set) => ({
   },
   loginAdmin: async (credentials) => {
     try {
-      const res = await adminAPI.post(
-        "/auth/login",
-        credentials,
-      );
-      // console.log(res);
-      set({ isAuthenticated: true });
+      const res = await adminAPI.post("/auth/login", credentials);
+      console.log(res);
+      if (res.data.user.role !== "admin") {
+        set({ isAuthenticated: false });
+        alert("Login failed. You are not an admin.");
+      }
+      else set({ isAuthenticated: true });
     } catch (error) {
       console.error("Failed to log in:", error);
       alert("Login failed. Please check your credentials and try again.");
@@ -56,14 +57,14 @@ const useAdminStore = create((set) => ({
       alert("Failed to update item. Please try again.");
     }
   },
-  logout: async ()=>{
-    try{
-      await adminAPI.get("/auth/logout")
-      set({isAuthenticated: false})
-    }catch(err){
+  logout: async () => {
+    try {
+      await adminAPI.get("/auth/logout");
+      set({ isAuthenticated: false });
+    } catch (err) {
       console.error("Failed to logout", err);
     }
-  }
+  },
 }));
 
 export default useAdminStore;
