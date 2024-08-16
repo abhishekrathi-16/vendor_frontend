@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Demo
+
+Watch the walkthrough of the project and know about its features
+[![Watch the video](https://drive.google.com/file/d/1K7lnMVG3u-wKu9KsatWrOoH6IXY2USoU/view?usp=sharing)](https://drive.google.com/file/d/1KMEM-vfWiCvTFoaYjPakT0YsxkB9Y4rX/view?usp=sharing)
+
 ## Required - Note
 
 Please start the backend server on `localhost:8000` before running the frontend of the application or using the deployed link.
